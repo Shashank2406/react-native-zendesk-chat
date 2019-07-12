@@ -48,4 +48,10 @@ RCT_EXPORT_METHOD(startChat:(NSDictionary *)options) {
   });
 }
 
+RCT_EXPORT_METHOD(init:(nonnull NSString *)accountKey) {
+  dispatch_sync(dispatch_get_main_queue(), ^{
+    [ZDCChat initializeWithAccountKey:accountKey];
+  });
+}
+
 @end
