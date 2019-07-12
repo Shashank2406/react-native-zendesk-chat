@@ -25,9 +25,31 @@
     </style>
 
     <!--Customize where chat widget appears-->
-    <style name="chat_widget" parent="_chat_widget">
+    <!-- <style name="chat_widget" parent="_chat_widget">
         <item name="anchor">bottom_left</item>
+    </style> -->
+
+
+    <style name="chat_widget">
+        // style this view
+        <item name="anchor">top_right</item>
     </style>
+
+    <style name="chat_widget_background">
+        // style this view
+        <item name="android:background">@color/main_green</item>
+
+    </style>
+
+    <style name="chat_widget_unread_notification">
+        // style this view
+    </style>
+
+    <!-- dimensions -->
+    <dimen name="widget_vertical_margin">16dp</dimen>
+    <dimen name="widget_horizontal_margin">16dp</dimen>
+    <dimen name="widget_width">100dp</dimen>
+    <dimen name="widget_height">100dp</dimen>
 
     <!--Customize chat colors-->
     <color name="chat_bubble_visitor">@color/main_green</color>
